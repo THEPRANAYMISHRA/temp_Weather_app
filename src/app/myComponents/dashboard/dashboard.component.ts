@@ -46,7 +46,7 @@ export class DashboardComponent implements OnChanges, OnInit {
   fetchWeather(city: string) {
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${
-        city || localStorage.getItem('lastSearch')
+        city || localStorage.getItem('lastSearch') || 'new delhi'
       }&appid=aa933ef4c19b1f02f668c3f54c35d52b`
     )
       .then((res) => {
