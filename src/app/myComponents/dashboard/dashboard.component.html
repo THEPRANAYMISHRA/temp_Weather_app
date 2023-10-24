@@ -1,0 +1,27 @@
+<div class="my-3">
+  <div
+    class="container my-3 p-3 text-light d-flex flex-column align-items-center gap-2"
+    ngClass="primary-board"
+  >
+    <img src="{{ weatherIcon }}" alt="weather" width="100px" />
+    <h1 class="text-center">{{ cityname }}</h1>
+    <h2 class="text-center">{{ temprature }} &deg;C</h2>
+  </div>
+  <!-- //////// -->
+  <div
+    class="container my-3 p-2 text-light text-center"
+    ngClass="primary-board"
+  >
+    <b class="h2 container my-3">( {{ description }} )</b>
+    <div class="container my-2">
+      <div class="row">
+        <p class="col-sm">Min-Temp : {{ tempratureMin }} &deg;C</p>
+        <p class="col-sm">Max-Temp : {{ tempratureMax }} &deg;C</p>
+        <p class="col-sm">Feels-Like : {{ tempratureMin }} &deg;C</p>
+      </div>
+    </div>
+  </div>
+  <div class="container my-3 p-3 text-light" ngClass="primary-board">
+    more details
+  </div>
+</div>
